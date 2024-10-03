@@ -1,0 +1,30 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "check": "prettier --write --single-quote --trailing-comma all 'src/**/*.{js,json,scss}'",
+    "start": "nodemon --inspect src/index.js",
+    "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.21.0",
+    "express-handlebars": "^8.0.1",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.6.3",
+    "mongoose-delete": "^1.0.2",
+    "mongoose-slug-updater": "^3.3.0",
+    "prettier": "^3.3.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "node-sass": "^9.0.0"
+  }
+}

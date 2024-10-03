@@ -1,0 +1,45 @@
+<div class="mt-5 container">
+    <div class="row">
+        <!-- Nội dung khóa học -->
+        <div class="col-lg-9">
+            <h2 class="mb-4" style="font-size: 2.5rem; font-weight: 700;">{{course.name}}</h2>
+            
+            <!-- Video YouTube -->
+            <div class="video-container mb-4">
+                <iframe class="w-100" height="400" src="https://www.youtube.com/embed/{{course.videoID}}" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            
+            <!-- Mô tả khóa học -->
+            <p class="text-muted" style="font-size: 1.1rem;">{{course.description}}</p>
+        </div>
+    </div>
+</div>
+
+<!-- Thêm CSS cho video -->
+<style>
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background-color: #000;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+        transform: translateY(-2px);
+        transition: all 0.3s ease;
+    }
+</style>

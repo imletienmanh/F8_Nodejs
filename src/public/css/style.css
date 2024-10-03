@@ -1,0 +1,38 @@
+.card-item {
+  margin-top: 15px !important; }
+
+.btn-primary {
+  display: block !important; }
+
+.nav-link .user-avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 4px; }
+
+.btn-edit-container {
+  white-space: nowrap; }
+
+.btn-edit-container-trash {
+  white-space: none; }
+
+.btn-edit-container-trash .btn-success {
+  min-width: 120px;
+  margin-top: 5px; }
+
+button.btn.btn-success a {
+  color: #fff; }
+
+p.card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
+.checkbox-select-all-options {
+  width: 140px !important;
+  margin: 0 16px; }
+
+.table thead th {
+  white-space: nowrap; }
